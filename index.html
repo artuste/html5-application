@@ -5,7 +5,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!--[if ie]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<![endif]-->
     <meta name="description" content="">
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
 
     <title>Recruitment Webdv</title>
 
@@ -16,6 +24,83 @@
 </head>
 
 <body>
+    <div id="container">
+        <div class="row">
+            <div id="panel" class="column col-md-4">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="active"><a href="#comments" role="tab" data-toggle="tab">Comments</a>
+                    </li>
+                    <li><a href="#todo-list-notes" role="tab" data-toggle="tab">To Do list / notes</a>
+                    </li>
+                </ul>
+
+                <!-- SEARCH -->
+                <div class="navbar-search">
+                    <input type="checkbox" id="show-resolved" />
+                    <label for="show-resolved">Show resolved</label>
+
+                    <input type="checkbox" id="current-page-only" />
+                    <label for="current-page-only">Current page only</label>
+
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="comments">1</div>
+                    <div class="tab-pane" id="todo-list-notes">2</div>
+                </div>
+
+                <!-- ACTIONS -->
+                <div class="panel-actions">
+                    <button type="button" class="btn btn-info">Add comment</button>
+                    <button type="button" class="btn">Resolve All comments</button>
+                </div>
+                <!-- END ACTIONS -->
+
+            </div>
+            <!-- END SEARCH -->
+
+            <!-- CONTENT -->
+            <div id="content" class="column col-md-8">
+
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="standard-website">
+                                        
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices porttitor enim quis consequat. Mauris sit amet ipsum elementum, pharetra massa et, viverra arcu. Proin quis neque augue. In ultrices sem semper odio accumsan, eu blandit est tempus. Pellentesque consectetur elementum aliquet. Nulla facilisis ipsum et aliquam aliquet. Fusce sagittis velit lectus, ut gravida dolor tempor sit amet. Vivamus ultricies, mi non facilisis dapibus, felis eros sagittis erat, nec pulvinar lacus nulla in leo. Integer posuere sagittis nisi, in adipiscing ipsum tristique a. Vivamus rhoncus, libero quis luctus sollicitudin, arcu massa porttitor dui, scelerisque blandit ligula justo eget odio. Sed quam ante, dignissim id velit at, sodales egestas nulla. Praesent et lacus vitae ligula malesuada mattis. Mauris id ligula sed elit interdum eleifend. Donec facilisis consequat nunc, a venenatis tellus. Aliquam nec consectetur turpis.
+                    
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices porttitor enim quis consequat. Mauris sit amet ipsum elementum, pharetra massa et, viverra arcu. Proin quis neque augue. In ultrices sem semper odio accumsan, eu blandit est tempus. Pellentesque consectetur elementum aliquet. Nulla facilisis ipsum et aliquam aliquet. Fusce sagittis velit lectus, ut gravida dolor tempor sit amet. Vivamus ultricies, mi non facilisis dapibus, felis eros sagittis erat, nec pulvinar lacus nulla in leo. Integer posuere sagittis nisi, in adipiscing ipsum tristique a. Vivamus rhoncus, libero quis luctus sollicitudin, arcu massa porttitor dui, scelerisque blandit ligula justo eget odio. Sed quam ante, dignissim id velit at, sodales egestas nulla. Praesent et lacus vitae ligula malesuada mattis. Mauris id ligula sed elit interdum eleifend. Donec facilisis consequat nunc, a venenatis tellus. Aliquam nec consectetur turpis.
+                    
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices porttitor enim quis consequat. Mauris sit amet ipsum elementum, pharetra massa et, viverra arcu. Proin quis neque augue. In ultrices sem semper odio accumsan, eu blandit est tempus. Pellentesque consectetur elementum aliquet. Nulla facilisis ipsum et aliquam aliquet. Fusce sagittis velit lectus, ut gravida dolor tempor sit amet. Vivamus ultricies, mi non facilisis dapibus, felis eros sagittis erat, nec pulvinar lacus nulla in leo. Integer posuere sagittis nisi, in adipiscing ipsum tristique a. Vivamus rhoncus, libero quis luctus sollicitudin, arcu massa porttitor dui, scelerisque blandit ligula justo eget odio. Sed quam ante, dignissim id velit at, sodales egestas nulla. Praesent et lacus vitae ligula malesuada mattis. Mauris id ligula sed elit interdum eleifend. Donec facilisis consequat nunc, a venenatis tellus. Aliquam nec consectetur turpis.
+                    
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices porttitor enim quis consequat. Mauris sit amet ipsum elementum, pharetra massa et, viverra arcu. Proin quis neque augue. In ultrices sem semper odio accumsan, eu blandit est tempus. Pellentesque consectetur elementum aliquet. Nulla facilisis ipsum et aliquam aliquet. Fusce sagittis velit lectus, ut gravida dolor tempor sit amet. Vivamus ultricies, mi non facilisis dapibus, felis eros sagittis erat, nec pulvinar lacus nulla in leo. Integer posuere sagittis nisi, in adipiscing ipsum tristique a. Vivamus rhoncus, libero quis luctus sollicitudin, arcu massa porttitor dui, scelerisque blandit ligula justo eget odio. Sed quam ante, dignissim id velit at, sodales egestas nulla. Praesent et lacus vitae ligula malesuada mattis. Mauris id ligula sed elit interdum eleifend. Donec facilisis consequat nunc, a venenatis tellus. Aliquam nec consectetur turpis.
+                    
+                    </div>
+                    <div class="tab-pane" id="iphone-320">iphone</div>
+                </div>
+                
+                
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="active"><a href="#standard-website" role="tab" data-toggle="tab">Standard website</a>
+                    </li>
+                    <li><a href="#iphone-320" role="tab" data-toggle="tab">iPhone 320px</a>
+                    </li>
+                </ul>
+                
+                
+                
+                
+            </div>
+        </div>
+        <!-- END CONTENT -->
+
+
+
+
+
+    </div>
+
+
+
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
@@ -28,8 +113,8 @@
     <script src="bower_components/bootstrap-switch/dist/js/bootstrap-switch.js"></script>
     <script src="bower_components/jquery-ui/jquery-ui.js"></script>
     <!-- endbower -->
-	
-    <script src="app/app.js"></script>
+
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>

@@ -21,7 +21,7 @@ module.exports = function (grunt) {
                     //https://github.com/yaniswang/HTMLHint/wiki/Rules
                     'tag-pair': true
                 },
-                src: ['app/modules/*/*/tpl/*.html', 'app/modules/*/*/*/tpl/*.html']
+                src: ['index.html',]
             }
         },
         jshint: {
@@ -34,25 +34,25 @@ module.exports = function (grunt) {
                     jQuery: true
                 }
             },
-            uses_defaults: ['app/metronic/init.js']
+            uses_defaults: ['assets/js/*.js']
         },
         less: {
             development: {
                 files: {
-                    "app/css/main.css": "app/css/main.less"
+                    "assets/css/main.css": "assets/css/main.less"
                 }
             }
         },
         cssmin: {
             combine: {
                 files: {
-                    'app/css/main.min.css': ['app/css/*.css']
+                    'assets/css/main.min.css': ['assets/css/*.css']
                 }
             }
         },
         watch: {
             less: {
-                files: ['app/css/*.less'],
+                files: ['assets/css/*.less'],
                 tasks: ['less']
             },
             cssmin: {
