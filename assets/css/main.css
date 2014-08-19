@@ -16,7 +16,7 @@ body,
   box-sizing: border-box;
 }
 #container #panel {
-  background: #eee;
+  background: #eeeeee;
   display: table-cell;
   float: none;
   width: 25%;
