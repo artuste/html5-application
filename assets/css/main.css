@@ -1,3 +1,4 @@
+@import 'fonts.css';
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,7 @@ html,
 body,
 .container {
   height: 100%;
+  background: #fff;
 }
 .container {
   display: table;
@@ -20,14 +22,57 @@ body,
   display: table-row;
 }
 .container .ux-panel {
-  background: #eeeeee;
+  position: relative;
   display: table-cell;
   float: none;
   width: 25%;
+  padding: 0;
+}
+.container .ux-panel .panel-actions {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #eee;
+  width: 100%;
+  padding: 12px 20px;
+}
+.container .ux-panel .navbar-search {
+  line-height: 50px;
+  padding: 0 10px;
+  border-bottom: 1px solid #e6e6e6;
 }
 .container .ux-content {
-  background: #ddd;
+  position: relative;
+  box-shadow: inset 80px 0px 40px 0px rgba(223, 223, 223, 0.4);
+  border: 0;
   float: none;
   display: table-cell;
   width: 75%;
+}
+.container ul.nav.ux-tab-left {
+  font-family: 'proxima_novasemibold';
+  color: #333333;
+  border: 0;
+}
+.container ul.nav.ux-tab-left li {
+  background: #ebebeb;
+  width: 50%;
+}
+.container ul.nav.ux-tab-left li a {
+  border-radius: 0;
+  border: 0;
+  color: #9f9f9f;
+  font-size: 14px;
+  margin: 0;
+  padding: 14px 0;
+  text-align: center;
+}
+.container ul.nav.ux-tab-left li.active a {
+  color: #333333;
+}
+.container ul.nav.ux-tab-right {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 20px;
 }
