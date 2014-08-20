@@ -7,21 +7,25 @@ body,
 .container {
   height: 100%;
 }
-#container {
+.container {
   display: table;
   width: 100%;
-  margin-top: -50px;
-  padding-top: 50px;
+  margin: 0;
+  padding: 0;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-#container #panel {
+.container .row {
+  height: 100%;
+  display: table-row;
+}
+.container .ux-panel {
   background: #eeeeee;
   display: table-cell;
   float: none;
   width: 25%;
 }
-#container #content {
+.container .ux-content {
   background: #ddd;
   float: none;
   display: table-cell;
