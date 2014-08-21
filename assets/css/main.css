@@ -1,4 +1,5 @@
 @import 'fonts.css';
+@import 'checkbox.css';
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,28 @@ body,
   height: 100%;
   background: #fff;
   font-family: 'proxima_novalight';
+}
+button {
+  font-family: 'proxima_novasemibold';
+  font-size: 13px;
+  border-radius: 2px !important;
+  border: 0;
+  -webkit-box-shadow: 1px 1px 1px 0px rgba(50, 50, 50, 0.4);
+  -moz-box-shadow: 1px 1px 1px 0px rgba(50, 50, 50, 0.4);
+  box-shadow: 1px 1px 1px 0px rgba(50, 50, 50, 0.4);
+}
+button.btn-info {
+  border: 0;
+  background: #1c6a9e;
+}
+button.btn-info:hover {
+  background: #86bff0;
+}
+button.btn-remove:hover {
+  background: #eef0f2;
+}
+label {
+  font-family: 'proxima_nova_rgregular';
 }
 .container {
   display: table;
@@ -33,14 +56,20 @@ body,
   position: absolute;
   bottom: 0;
   left: 0;
-  background: #eee;
+  border-top: 1px solid #fbfbfb;
   width: 100%;
   padding: 12px 20px;
+}
+.container .ux-panel .panel-actions button:first-child {
+  margin-right: 8px;
 }
 .container .ux-panel .navbar-search {
   line-height: 50px;
   padding: 0 10px;
-  border-bottom: 1px solid #e6e6e6;
+  box-shadow: 0px -2px 10px 0px rgba(50, 50, 50, 0.22);
+}
+.container .ux-panel .navbar-search label {
+  padding-right: 20px;
 }
 .container .ux-content {
   position: relative;
@@ -101,4 +130,12 @@ body,
 .container ul.nav.ux-tab-right li.active a {
   color: #777777;
   background: #fff !important;
+}
+.container .search-button {
+  cursor: pointer;
+  display: inline-block;
+  background: url('../images/sprite.png') no-repeat;
+  width: 16px;
+  height: 14px;
+  background-position: -37px -8px;
 }
