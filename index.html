@@ -11,8 +11,10 @@
     <![endif]-->
     <meta name="description" content="">
 
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
 
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/js/custom-scrollbar/jquery.mCustomScrollbar.css" />
     <link rel="stylesheet" href="assets/css/main.css"/>
 
     <title>Recruitment Webdv</title>
@@ -48,13 +50,16 @@
             <div class="tab-content">
                 <div class="tab-pane active" id="comments">
                     <div class="box-wrapper">
-                        <div class="box">
+                        <!-- Box default -->
+                        <div class="box box-default">
                             <div class="avatar">
-                                <img src="assets/images/avatar1.png" />
+                                <img src="assets/images/avatar1.png"/>
                             </div>
                             <div class="text">
-                                <span class="bold-text">Kamil Zięba:</span> Can we add “hi-fi” version as well? People should be able to switch between hi-fi and lo-fi version
+                                <span class="bold-text">Kamil Zięba:</span> Can we add “hi-fi” version as well? People
+                                should be able to switch between hi-fi and lo-fi version
                                 <span class="time">22 hrs ago</span>
+
                                 <div class="comment-box-actions">
                                     <span class="like"></span>
                                     <span class="separator"></span>
@@ -65,16 +70,60 @@
                             </div>
                         </div>
 
+                        <!-- Box approved -->
                         <div class="box box-approved">
                             <div class="avatar">
-                                <img src="assets/images/avatar1.png" />
+                                <img src="assets/images/avatar1.png"/>
                             </div>
                             <div class="text">
-                                <span class="bold-text">Kamil Zięba:</span> Can we add “hi-fi” version as well? People should be able to switch between hi-fi and lo-fi version
+                                <span class="bold-text">Kamil Zięba:</span> Can we add “hi-fi” version as well? People
+                                should be able to switch between hi-fi and lo-fi version
                                 <span class="time">22 hrs ago</span>
                                 <span class="approved"></span>
                             </div>
                         </div>
+
+                        <!-- Box toggled -->
+
+                        <div class="box-toggled-wrapper">
+                            <div class="box box-default box-toggled">
+                                <div class="avatar">
+                                    <img src="assets/images/avatar1.png"/>
+                                </div>
+                                <div class="text">
+                                    <span class="bold-text">Kamil Zięba:</span> Can we add “hi-fi” version as well?
+                                    People should be able to switch between hi-fi and lo-fi version
+                                    <span class="time">22 hrs ago</span>
+
+                                    <div class="comment-box-actions">
+                                        <span class="like"></span>
+                                        <span class="separator"></span>
+                                        <a href="#" class="link">Reply</a>
+                                        <span class="separator"></span>
+                                        <a href="#" class="link">Mark as resolved</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box box-default box-comment">
+                                <div class="avatar">
+                                    <img src="assets/images/avatar1.png"/>
+                                </div>
+                                <div class="text">
+                                    <span class="bold-text">Kamil Zięba:</span> Can we add “hi-fi” version as well?
+                                    People should be able to switch between hi-fi and lo-fi version
+                                    <span class="time">22 hrs ago</span>
+
+                                    <div class="comment-box-actions">
+                                        <span class="like"></span>
+                                        <span class="separator"></span>
+                                        <a href="#" class="link">Reply</a>
+                                        <span class="separator"></span>
+                                        <a href="#" class="link">Mark as resolved</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
 
                     </div>
                 </div>
@@ -130,6 +179,7 @@
 <!-- endbower -->
 
 <script src="assets/js/app.js"></script>
+<script src="assets/js/custom-scrollbar/jquery.mCustomScrollbar.js"></script>
 </body>
 
 </html>

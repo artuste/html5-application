@@ -59,6 +59,8 @@ label {
   border-top: 1px solid #fbfbfb;
   width: 100%;
   padding: 12px 20px;
+  z-index: 9999;
+  background: #fff;
 }
 .container .ux-panel .panel-actions button:first-child {
   margin-right: 8px;
@@ -156,6 +158,20 @@ label {
 }
 .container .box-wrapper .box.box-approved {
   border-color: #4fbd50;
+  background: #f2fff2;
+}
+.container .box-wrapper .box.box-toggled {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.container .box-wrapper .box.box-toggled:hover {
+  border-color: #e6e6e6;
+}
+.container .box-wrapper .box.box-comment {
+  background: #f7f7f7;
+}
+.container .box-wrapper .box.box-comment:hover {
+  border-color: #e6e6e6;
 }
 .container .box-wrapper .box .avatar {
   float: left;
