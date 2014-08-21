@@ -258,3 +258,17 @@ label {
   height: 12px;
   display: inline-block;
 }
+.container .imac-icon {
+  background: url('../images/sprite.png') no-repeat;
+  background-position: -86px -10px;
+  width: 15px;
+  height: 13px;
+  display: inline-block;
+}
+.container .iphone-icon {
+  background: url('../images/sprite.png') no-repeat;
+  background-position: -62px -7px;
+  width: 15px;
+  height: 16px;
+  display: inline-block;
+}
