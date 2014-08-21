@@ -11,10 +11,7 @@
     <![endif]-->
     <meta name="description" content="">
 
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="assets/js/custom-scrollbar/jquery.mCustomScrollbar.css" />
     <link rel="stylesheet" href="assets/css/main.css"/>
 
     <title>Recruitment Webdv</title>
@@ -38,13 +35,19 @@
 
             <!-- SEARCH -->
             <div class="navbar-search">
-                <input type="checkbox" checked class="css-checkbox lrg" id="show-resolved"/>
-                <label for="show-resolved" class="css-label lrg web-two-style">Show resolved</label>
+                <div class="navbar-search-filter">
+                    <input type="checkbox" checked class="css-checkbox lrg" id="show-resolved"/>
+                    <label for="show-resolved" class="css-label lrg web-two-style">Show resolved</label>
 
-                <input type="checkbox" checked class="css-checkbox lrg" id="current-page-only"/>
-                <label for="current-page-only" class="css-label lrg web-two-style">Current page only</label>
+                    <input type="checkbox" checked class="css-checkbox lrg" id="current-page-only"/>
+                    <label for="current-page-only" class="css-label lrg web-two-style">Current page only</label>
 
-                <div class="search-button"></div>
+                    <div class="search-button"></div>
+                </div>
+                <div class="navbar-search-field hidden">
+                    <div class="search-button"></div>
+                    <input type="text" placeholder="Search in comments"/>
+                </div>
             </div>
 
             <div class="tab-content">
@@ -52,6 +55,7 @@
                     <div class="box-wrapper">
                         <!-- Box default -->
                         <div class="box box-default">
+                            <div class="arrow"></div>
                             <div class="avatar">
                                 <img src="assets/images/avatar1.png"/>
                             </div>
@@ -72,6 +76,7 @@
 
                         <!-- Box approved -->
                         <div class="box box-approved">
+                            <div class="arrow"></div>
                             <div class="avatar">
                                 <img src="assets/images/avatar1.png"/>
                             </div>
@@ -86,7 +91,9 @@
                         <!-- Box toggled -->
 
                         <div class="box-toggled-wrapper">
+
                             <div class="box box-default box-toggled">
+                                <div class="arrow revert"></div>
                                 <div class="avatar">
                                     <img src="assets/images/avatar1.png"/>
                                 </div>
@@ -147,7 +154,9 @@
             <div class="tab-content">
                 <div class="tab-pane active" id="standard-website">
                 </div>
-                <div class="tab-pane" id="iphone-320">iphone</div>
+                <div class="tab-pane" id="iphone-320">
+                    <!-- here iphone-320 -->
+                </div>
             </div>
 
 
@@ -167,19 +176,14 @@
 
 <!-- bower:js -->
 <script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<script src="bower_components/angular-route/angular-route.js"></script>
-<script src="bower_components/angular-mocks/angular-mocks.js"></script>
-<script src="bower_components/angular-resource/angular-resource.js"></script>
-<script src="bower_components/angular-local-storage/angular-local-storage.js"></script>
-<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-<script src="bower_components/bootstrap-switch/dist/js/bootstrap-switch.js"></script>
 <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+<script src="bower_components/respond/dest/respond.src.js"></script>
 <!-- endbower -->
 
+
 <script src="assets/js/app.js"></script>
-<script src="assets/js/custom-scrollbar/jquery.mCustomScrollbar.js"></script>
+
 </body>
 
 </html>

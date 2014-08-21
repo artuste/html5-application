@@ -73,6 +73,21 @@ label {
 .container .ux-panel .navbar-search label {
   padding-right: 20px;
 }
+.container .ux-panel .navbar-search input[type="text"] {
+  line-height: 16px;
+  font-size: 13px;
+  border-color: #9e9e9e;
+  border-width: 0 0 0 1px;
+  margin: 3px 5px;
+  padding: 0 6px;
+  font-family: 'proxima_novaregular_italic';
+  color: #c7c7c7;
+  width: 260px;
+}
+.container .ux-panel .navbar-search .navbar-search-field .search-button {
+  float: none;
+  margin: -2px 4px;
+}
 .container .ux-content {
   position: relative;
   box-shadow: inset 134px 0px 88px -47px rgba(165, 165, 165, 0.3);
@@ -140,12 +155,15 @@ label {
   width: 16px;
   height: 14px;
   background-position: -37px -8px;
+  float: right;
+  margin-top: -33px;
 }
 .container .box-wrapper {
   padding: 20px;
   font-family: 'proxima_nova_rgregular';
 }
 .container .box-wrapper .box {
+  position: relative;
   padding: 15px;
   width: 100%;
   height: 120px;
@@ -173,6 +191,19 @@ label {
 .container .box-wrapper .box.box-comment:hover {
   border-color: #e6e6e6;
 }
+.container .box-wrapper .box .arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: url('../images/sprite.png') no-repeat;
+  width: 16px;
+  height: 14px;
+  background-position: -133px -8px;
+}
+.container .box-wrapper .box .arrow.revert {
+  background-position: -147px -8px;
+}
 .container .box-wrapper .box .avatar {
   float: left;
   width: 30px;
@@ -186,6 +217,8 @@ label {
 .container .box-wrapper .box .text {
   display: table-cell;
   font-size: 13px;
+  padding-right: 16px;
+  text-align: justify;
 }
 .container .box-wrapper .box .text .bold-text {
   font-family: 'proxima_novasemibold';
