@@ -1,5 +1,8 @@
 $(function () {
-var $parent = $('.navbar-search-filter');
+var $parent = $('.navbar-search-filter'),
+    $boxWrapper = $(".box-wrapper"),
+    $panelActions = $('.panel-actions'),
+    $panelTop = $('.panel-top');
 
     $('.search-button', $parent).click(function () {
         $parent.hide();
@@ -8,14 +11,22 @@ var $parent = $('.navbar-search-filter');
         return false;
     });
     
-    var globalHeight = window.innerHeight,
-        panelActionsBottomHeight = $('.panel-actions').height(),
-        panelTopHeight = $('.panel-top').height(),
-        boxWrapperHeight = globalHeight - panelActionsBottomHeight - panelTopHeight;
+    function initScrollbar() {
+        var globalHeight = window.innerHeight,
+        panelActionsBottomHeight = $panelActions.height(),
+        panelTopHeight = $panelTop.height(),
+        boxWrapperHeight = (globalHeight - panelActionsBottomHeight - panelTopHeight);
+        
+        $boxWrapper
+            .css('height', boxWrapperHeight)
+            .mCustomScrollbar({
+                theme:"dark"
+            });
+    }
     
-    $(".box-wrapper")
-        .css('height', boxWrapperHeight)
-        .mCustomScrollbar({
-            theme:"dark"
-        });
+    window.onresize = function(event) {
+       initScrollbar();
+    };
+    
+    initScrollbar();
 });
