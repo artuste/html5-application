@@ -159,6 +159,7 @@ label {
   margin-top: -33px;
 }
 .container .box-wrapper {
+  height: 400px;
   padding: 20px;
   font-family: 'proxima_nova_rgregular';
 }
