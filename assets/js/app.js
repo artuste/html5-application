@@ -20,7 +20,7 @@ var $parent = $('.navbar-search-filter'),
         $boxWrapper
             .css('height', boxWrapperHeight)
             .mCustomScrollbar({
-                theme:"dark"
+                theme: 'dark'
             });
     }
     
