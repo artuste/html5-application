@@ -252,6 +252,22 @@ label {
   height: 10px;
   display: inline-block;
 }
+.container .box-wrapper .box .text .attached-files-box-actions {
+  color: #b8b8b8;
+  font-family: 'proxima_nova_rgregular';
+  font-size: 11px;
+}
+.container .box-wrapper .box .text .attached-files-box-actions .file-icon {
+  background: url('../images/sprite.png') no-repeat;
+  background-position: -172px -11px;
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+}
+.container .box-wrapper .box .text .attached-files-box-actions .file-name-link {
+  color: #3498db;
+  text-decoration: underline;
+}
 .container .box-wrapper .box .text .approved {
   background: url('../images/sprite.png') no-repeat;
   background-position: -10px -10px;
