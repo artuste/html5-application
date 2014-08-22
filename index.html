@@ -5,16 +5,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
     <!--[if ie]>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <![endif]-->
     <meta name="description" content="">
 
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="assets/js/custom-scrollbar/jquery.mCustomScrollbar.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/js/custom-scrollbar/jquery.mCustomScrollbar.css" />
     <link rel="stylesheet" href="assets/css/fonts.css" />
-    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" href="assets/css/main.css" />
 
     <title>Recruitment Webdv</title>
 
@@ -25,85 +25,47 @@
 </head>
 
 <body>
-<div class="container">
-    <div class="row">
-        <div class="site-panel col-md-4">
-           <div class="panel-top">
-            <ul class="ux-tab-left nav nav-tabs" role="tablist">
-                <li class="active"><a href="#comments" role="tab" data-toggle="tab">Comments</a>
-                </li>
-                <li><a href="#todo-list-notes" role="tab" data-toggle="tab">To Do list / notes</a>
-                </li>
-            </ul>
+    <div class="container">
+        <div class="row">
+            <div class="site-panel col-md-4">
+                <div class="panel-top">
+                    <ul class="ux-tab-left nav nav-tabs" role="tablist">
+                        <li class="active"><a href="#comments" role="tab" data-toggle="tab">Comments</a>
+                        </li>
+                        <li><a href="#todo-list-notes" role="tab" data-toggle="tab">To Do list / notes</a>
+                        </li>
+                    </ul>
 
-            <!-- SEARCH -->
-            <div class="navbar-search">
-                <div class="navbar-search-filter">
-                    <input type="checkbox" checked class="css-checkbox lrg" id="show-resolved"/>
-                    <label for="show-resolved" class="css-label lrg web-two-style">Show resolved</label>
+                    <!-- SEARCH -->
+                    <div class="navbar-search">
+                        <div class="navbar-search-filter">
+                            <div class="navbar-checkbox">
+                                <input type="checkbox" checked class="css-checkbox lrg" id="show-resolved" />
+                                <label for="show-resolved" class="css-label lrg web-two-style">Show resolved</label>
 
-                    <input type="checkbox" checked class="css-checkbox lrg" id="current-page-only"/>
-                    <label for="current-page-only" class="css-label lrg web-two-style">Current page only</label>
-
-                    <div class="search-button"></div>
-                </div>
-                <div class="navbar-search-field hidden">
-                    <div class="search-button"></div>
-                    <input type="text" placeholder="Search in comments"/>
-                </div>
-            </div>
-            </div>
-
-            <div class="tab-content">
-                <div class="tab-pane active" id="comments">
-                    <div class="box-wrapper">
-                        <!-- Box default -->
-                        <div class="box box-default">
-                            <div class="arrow"></div>
-                            <div class="avatar">
-                                <img src="assets/images/avatar1.png"/>
+                                <input type="checkbox" checked class="css-checkbox lrg" id="current-page-only" />
+                                <label for="current-page-only" class="css-label lrg web-two-style">Current page only</label>
                             </div>
-                            <div class="text">
-                                <span class="bold-text">Kamil Zięba:</span> Can we add “hi-fi” version as well? People
-                                should be able to switch between hi-fi and lo-fi version
-                                <span class="time">22 hrs ago</span>
-
-                                <div class="comment-box-actions">
-                                    <span class="like"></span>
-                                    <span class="separator"></span>
-                                    <a href="#" class="link">Reply</a>
-                                    <span class="separator"></span>
-                                    <a href="#" class="link">Mark as resolved</a>
-                                </div>
-                            </div>
+                            <div class="search-button"></div>
                         </div>
-
-                        <!-- Box approved -->
-                        <div class="box box-approved">
-                            <div class="arrow"></div>
-                            <div class="avatar">
-                                <img src="assets/images/avatar1.png"/>
-                            </div>
-                            <div class="text">
-                                <span class="bold-text">Kamil Zięba:</span> Can we add “hi-fi” version as well? People
-                                should be able to switch between hi-fi and lo-fi version
-                                <span class="time">22 hrs ago</span>
-                                <span class="approved"></span>
-                            </div>
+                        <div class="navbar-search-field hidden">
+                            <div class="search-button"></div>
+                            <input type="text" placeholder="Search in comments" />
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Box toggled -->
-
-                        <div class="box-toggled-wrapper">
-
-                            <div class="box box-default box-toggled">
-                                <div class="arrow revert"></div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="comments">
+                        <div class="box-wrapper">
+                            <!-- Box default -->
+                            <div class="box box-default">
+                                <div class="arrow"></div>
                                 <div class="avatar">
-                                    <img src="assets/images/avatar1.png"/>
+                                    <img src="assets/images/avatar1.png" />
                                 </div>
                                 <div class="text">
-                                    <span class="bold-text">Kamil Zięba:</span> Can we add “hi-fi” version as well?
-                                    People should be able to switch between hi-fi and lo-fi version
+                                    <span class="bold-text">Kamil Zięba:</span> Can we add “hi-fi” version as well? People should be able to switch between hi-fi and lo-fi version
                                     <span class="time">22 hrs ago</span>
 
                                     <div class="comment-box-actions">
@@ -115,91 +77,128 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="box box-default box-comment">
+
+                            <!-- Box approved -->
+                            <div class="box box-approved">
+                                <div class="arrow"></div>
                                 <div class="avatar">
-                                    <img src="assets/images/avatar2.png"/>
+                                    <img src="assets/images/avatar1.png" />
                                 </div>
                                 <div class="text">
-                                    <span class="bold-text">Sebastian Witman:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    <span class="time">15 minutes ago</span>
-                                    
-                                    <div class="attached-files-box-actions">
-                                        <span class="file-icon"></span>
-                                        <span class="file-text">attached files:</span>
-                                        <a href="#" class="file-name-link">emma_watson.jpg</a>
-                                    </div>
+                                    <span class="bold-text">Kamil Zięba:</span> Can we add “hi-fi” version as well? People should be able to switch between hi-fi and lo-fi version
+                                    <span class="time">22 hrs ago</span>
+                                    <span class="approved"></span>
+                                </div>
+                            </div>
 
-                                    <div class="comment-box-actions">
-                                        <span class="like"></span>
-                                        <span class="separator"></span>
-                                        <a href="#" class="link">Reply</a>
+                            <!-- Box toggled -->
+
+                            <div class="box-toggled-wrapper">
+
+                                <div class="box box-default box-toggled">
+                                    <div class="arrow revert"></div>
+                                    <div class="avatar">
+                                        <img src="assets/images/avatar1.png" />
+                                    </div>
+                                    <div class="text">
+                                        <span class="bold-text">Kamil Zięba:</span> Can we add “hi-fi” version as well? People should be able to switch between hi-fi and lo-fi version
+                                        <span class="time">22 hrs ago</span>
+
+                                        <div class="comment-box-actions">
+                                            <span class="like"></span>
+                                            <span class="separator"></span>
+                                            <a href="#" class="link">Reply</a>
+                                            <span class="separator"></span>
+                                            <a href="#" class="link">Mark as resolved</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box box-default box-comment">
+                                    <div class="avatar">
+                                        <img src="assets/images/avatar2.png" />
+                                    </div>
+                                    <div class="text">
+                                        <span class="bold-text">Sebastian Witman:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        <span class="time">15 minutes ago</span>
+
+                                        <div class="attached-files-box-actions">
+                                            <span class="file-icon"></span>
+                                            <span class="file-text">attached files:</span>
+                                            <a href="#" class="file-name-link">emma_watson.jpg</a>
+                                        </div>
+
+                                        <div class="comment-box-actions">
+                                            <span class="like"></span>
+                                            <span class="separator"></span>
+                                            <a href="#" class="link">Reply</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="tab-pane" id="todo-list-notes">
+                        <!-- here to do list -->
+                    </div>
                 </div>
-                <div class="tab-pane" id="todo-list-notes">
-                    <!-- here to do list -->
+
+                <!-- ACTIONS -->
+                <div class="panel-actions">
+                    <button type="button" class="btn btn-info">Add comment</button>
+                    <button type="button" class="btn btn-remove">Resolve All comments</button>
                 </div>
+                <!-- END ACTIONS -->
+
+            </div>
+            <!-- END SEARCH -->
+
+            <!-- CONTENT -->
+            <div class="site-content col-md-8">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="standard-website">
+                    </div>
+                    <div class="tab-pane" id="iphone-320">
+                        <!-- here iphone-320 -->
+                    </div>
+                </div>
+
+
+                <ul class="ux-tab-right nav nav-tabs" role="tablist">
+                    <li class="active">
+                        <a href="#standard-website" role="tab" data-toggle="tab">
+                            <span class="imac-icon"></span>
+                            Standard website
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#iphone-320" role="tab" data-toggle="tab">
+                            <span class="iphone-icon"></span>
+                            iPhone 320px
+                        </a>
+                    </li>
+                </ul>
+
             </div>
 
-            <!-- ACTIONS -->
-            <div class="panel-actions">
-                <button type="button" class="btn btn-info">Add comment</button>
-                <button type="button" class="btn btn-remove">Resolve All comments</button>
-            </div>
-            <!-- END ACTIONS -->
-
+            <!-- Arrow Right -->
+            <!--        <div class="show-site-content"></div>-->
         </div>
-        <!-- END SEARCH -->
-        
-        <!-- CONTENT -->
-        <div class="site-content col-md-8">
-            <div class="tab-content">
-                <div class="tab-pane active" id="standard-website">
-                </div>
-                <div class="tab-pane" id="iphone-320">
-                    <!-- here iphone-320 -->
-                </div>
-            </div>
+        <!-- END CONTENT -->
 
-
-            <ul class="ux-tab-right nav nav-tabs" role="tablist">
-                <li class="active">
-                    <a href="#standard-website" role="tab" data-toggle="tab">
-                        <span class="imac-icon"></span>
-                        Standard website
-                    </a>
-                </li>
-                <li><a href="#iphone-320" role="tab" data-toggle="tab">
-                    <span class="iphone-icon"></span>
-                    iPhone 320px
-                </a>
-                </li>
-            </ul>
-
-        </div>
-        
-        <!-- Arrow Right -->
-<!--        <div class="show-site-content"></div>-->
     </div>
-    <!-- END CONTENT -->
-
-</div>
 
 
-<!-- bower:js -->
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<script src="bower_components/jquery-ui/jquery-ui.js"></script>
-<script src="bower_components/respond/dest/respond.src.js"></script>
-<!-- endbower -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/respond/dest/respond.src.js"></script>
+    <!-- endbower -->
 
 
-<script src="assets/js/app.js"></script>
-<script src="assets/js/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="assets/js/custom-scrollbar/jquery.mCustomScrollbar.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/custom-scrollbar/jquery.mCustomScrollbar.js"></script>
 
 </body>
 
