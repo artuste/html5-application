@@ -1,0 +1,119 @@
+label {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+input[type=checkbox].css-checkbox {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    & + label {
+        &.css-label {
+            padding-left: 20px;
+            height: 15px;
+            display: inline-block;
+            line-height: 15px;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            font-size: 15px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+    }
+    &:checked {
+        & + label {
+            &.css-label {
+                background-position: 0 -15px;
+            }
+        }
+    }
+    &.med {
+        & + label {
+            &.css-label {
+                &.med {
+                    padding-left: 22px;
+                    height: 17px;
+                    display: inline-block;
+                    line-height: 17px;
+                    background-repeat: no-repeat;
+                    background-position: 0 0;
+                    font-size: 13px;
+                    vertical-align: middle;
+                    cursor: pointer;
+                }
+            }
+        }
+        &:checked {
+            & + label {
+                &.css-label {
+                    &.med {
+                        background-position: 0 -17px;
+                    }
+                }
+            }
+        }
+    }
+    &.sme {
+        & + label {
+            &.css-label {
+                &.sme {
+                    padding-left: 22px;
+                    height: 16px;
+                    display: inline-block;
+                    line-height: 16px;
+                    background-repeat: no-repeat;
+                    background-position: 0 0;
+                    font-size: 15px;
+                    vertical-align: middle;
+                    cursor: pointer;
+                }
+            }
+        }
+        &:checked {
+            & + label {
+                &.css-label {
+                    &.sme {
+                        background-position: 0 -16px;
+                    }
+                }
+            }
+        }
+    }
+    &.lrg {
+        & + label {
+            &.css-label {
+                &.lrg {
+                    padding-left: 22px;
+                    height: 20px;
+                    display: inline-block;
+                    line-height: 22px;
+                    background-repeat: no-repeat;
+                    background-position: -5px -25px;
+                    font-size: 13px;
+                    vertical-align: middle;
+                    cursor: pointer;
+                }
+            }
+        }
+        &:checked {
+            & + label {
+                &.css-label {
+                    &.lrg {
+                        background-position: -5px -44px;
+                    }
+                }
+            }
+        }
+    }
+}
+.web-two-style {
+    background-image: url('../images/sprite.png');
+}
