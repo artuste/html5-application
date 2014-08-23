@@ -301,15 +301,26 @@ label {
     }
 }
 
-//.show-site-content {
-//    position: absolute;
-//    top: 0;
-//    right: 0;
-//    height: 100%;
-//    width: 100px !important;
-//    background: #eee;
-//    z-index: 999;
-//}
+
+.show-site-content {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    bottom: 46px;
+    right: 0;
+    line-height: 40px;
+    width: 200px !important;
+    background: #46b8da;
+    font-size: 20px;
+    color: #000;
+    font-family: 'proxima_novasemibold';
+    z-index: 999;
+    opacity: .6;
+    text-align: center;
+    &:hover {
+      opacity: .8;
+    }
+}
 
 /* Overrides */
 

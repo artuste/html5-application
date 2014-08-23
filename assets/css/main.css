@@ -82,6 +82,9 @@ input[type=checkbox].css-checkbox.lrg:checked + label.css-label.lrg {
   .container .row > div.site-content {
     display: none;
   }
+  .container .row .show-site-content {
+    display: block;
+  }
 }
 * {
   margin: 0;
@@ -398,6 +401,25 @@ label {
   width: 15px;
   height: 16px;
   display: inline-block;
+}
+.show-site-content {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  bottom: 46px;
+  right: 0;
+  line-height: 40px;
+  width: 200px !important;
+  background: #46b8da;
+  font-size: 20px;
+  color: #000;
+  font-family: 'proxima_novasemibold';
+  z-index: 999;
+  opacity: .6;
+  text-align: center;
+}
+.show-site-content:hover {
+  opacity: .8;
 }
 /* Overrides */
 .mCSB_dragger_bar {

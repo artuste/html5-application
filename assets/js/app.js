@@ -1,11 +1,14 @@
 $(function () {
 
     var $parent = $('.navbar-search-filter'),
+        $sitePanel = $('.site-panel'),
+        $siteContent = $('.site-content'),
         $boxWrapper = $(".box-wrapper"),
         $panelActions = $('.panel-actions'),
         $panelTop = $('.panel-top'),
         $searchBtn = $('.search-button', $parent),
-        $arrowBtn = $('.arrow');
+        $arrowBtn = $('.arrow'),
+        $mobileShowContent = $('.show-site-content');
 
     $searchBtn.click(function () {
         $parent.hide();
@@ -29,6 +32,25 @@ $(function () {
         }
 
         return false;
+    });
+
+    $mobileShowContent.click(function () {
+        var $this = $(this);
+
+        if($this.hasClass('content-visible')) {
+            $this.removeClass('content-visible');
+            $siteContent.fadeOut(200, function () {
+                $sitePanel.fadeIn();
+            });
+        } else {
+            $sitePanel.fadeOut(300, function () {
+                $siteContent.fadeIn(300, function () {
+                    $(this).css('display', 'table-cell');
+                    $this.addClass('content-visible');
+                });
+            });
+        }
+
     });
 
     function initScrollbar () {
