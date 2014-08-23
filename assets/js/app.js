@@ -40,13 +40,17 @@ $(function () {
         if($this.hasClass('content-visible')) {
             $this.removeClass('content-visible');
             $siteContent.fadeOut(200, function () {
-                $sitePanel.fadeIn();
+                $sitePanel.fadeIn(function () {
+                    $('.show-site-content').text('Show content');
+                });
+
             });
         } else {
             $sitePanel.fadeOut(300, function () {
                 $siteContent.fadeIn(300, function () {
                     $(this).css('display', 'table-cell');
                     $this.addClass('content-visible');
+                    $('.show-site-content').text('Show panel');
                 });
             });
         }
