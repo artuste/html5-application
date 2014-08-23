@@ -16,6 +16,5 @@
     "grunt-wiredep": "^1.8.0"
   },
   "dependencies": {
-    "angularjs": "0.0.1"
   }
 }

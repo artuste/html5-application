@@ -97,7 +97,7 @@ label {
         width: 75%;
     }
     ul.nav {
-        &.ux-tab-left {
+        &.panel-tab-left {
             font-family: 'proxima_novasemibold';
             color: #333333;
             border: 0;
@@ -120,7 +120,7 @@ label {
                 }
             }
         }
-        &.ux-tab-right {
+        &.content-tab-right {
             font-family: 'proxima_novasemibold';
             position: absolute;
             bottom: 0;
@@ -193,13 +193,13 @@ label {
             }
             &.box-toggled {
                 margin-bottom: 0;
-                border-bottom: 0;
                 &:hover {
                     border-color: #e6e6e6;
                 }
             }
             &.box-comment {
                 background: #f7f7f7;
+                border-top: 0;
                 &:hover {
                     border-color: #e6e6e6;
                 }
@@ -292,16 +292,16 @@ label {
         width: 15px;
         height: 13px;
         display: inline-block;
+        vertical-align: middle;
     }
     .iphone-icon {
         .common-sprite(-62px, -7px);
         width: 15px;
         height: 16px;
         display: inline-block;
+        vertical-align: middle;
     }
 }
-
-
 .show-site-content {
     cursor: pointer;
     display: none;
@@ -323,7 +323,6 @@ label {
 }
 
 /* Overrides */
-
 .mCSB_dragger_bar {
     background: rgba(0, 0, 0, 0.22) !important;
 }

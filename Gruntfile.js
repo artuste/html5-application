@@ -18,7 +18,6 @@ module.exports = function (grunt) {
         htmlhint: {
             angular_files: {
                 options: {
-                    //https://github.com/yaniswang/HTMLHint/wiki/Rules
                     'tag-pair': true
                 },
                 src: ['index.html',]
@@ -64,7 +63,7 @@ module.exports = function (grunt) {
                 tasks: ['jshint']
             },
             html: {
-                files: ['app/tpl/*.html'],
+                files: ['index.html'],
                 tasks: ['htmlhint']
             }
         }

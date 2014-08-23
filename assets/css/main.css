@@ -185,16 +185,16 @@ label {
   display: table-cell;
   width: 75%;
 }
-.container ul.nav.ux-tab-left {
+.container ul.nav.panel-tab-left {
   font-family: 'proxima_novasemibold';
   color: #333333;
   border: 0;
 }
-.container ul.nav.ux-tab-left li {
+.container ul.nav.panel-tab-left li {
   background: #ebebeb;
   width: 50%;
 }
-.container ul.nav.ux-tab-left li a {
+.container ul.nav.panel-tab-left li a {
   border-radius: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -205,10 +205,10 @@ label {
   padding: 14px 0;
   text-align: center;
 }
-.container ul.nav.ux-tab-left li.active a {
+.container ul.nav.panel-tab-left li.active a {
   color: #333333;
 }
-.container ul.nav.ux-tab-right {
+.container ul.nav.content-tab-right {
   font-family: 'proxima_novasemibold';
   position: absolute;
   bottom: 0;
@@ -220,18 +220,18 @@ label {
   -moz-box-shadow: inset 5px 7px 16px -12px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: inset 5px 7px 16px -12px rgba(0, 0, 0, 0.75);
 }
-.container ul.nav.ux-tab-right li:first-child {
+.container ul.nav.content-tab-right li:first-child {
   box-shadow: inset -17px 15px 19px -24px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: inset -17px 15px 19px -24px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: inset -17px 15px 19px -24px rgba(0, 0, 0, 0.75);
 }
-.container ul.nav.ux-tab-right li:first-child.active a {
+.container ul.nav.content-tab-right li:first-child.active a {
   box-shadow: inset 134px 0px 88px -47px rgba(165, 165, 165, 0.3);
   -moz-box-shadow: inset 134px 0px 88px -47px rgba(165, 165, 165, 0.3);
   -webkit-box-shadow: inset 134px 0px 88px -47px rgba(165, 165, 165, 0.3);
   background: #fff;
 }
-.container ul.nav.ux-tab-right li a {
+.container ul.nav.content-tab-right li a {
   font-size: 12px;
   border: 0;
   border-radius: 0;
@@ -245,7 +245,7 @@ label {
   -moz-box-shadow: inset 3px 0px 14px -10px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: inset 3px 0px 14px -10px rgba(0, 0, 0, 0.75);
 }
-.container ul.nav.ux-tab-right li.active a {
+.container ul.nav.content-tab-right li.active a {
   color: #777777;
   background: #fff !important;
 }
@@ -287,13 +287,13 @@ label {
 }
 .container .box-wrapper .box.box-toggled {
   margin-bottom: 0;
-  border-bottom: 0;
 }
 .container .box-wrapper .box.box-toggled:hover {
   border-color: #e6e6e6;
 }
 .container .box-wrapper .box.box-comment {
   background: #f7f7f7;
+  border-top: 0;
 }
 .container .box-wrapper .box.box-comment:hover {
   border-color: #e6e6e6;
@@ -393,6 +393,7 @@ label {
   width: 15px;
   height: 13px;
   display: inline-block;
+  vertical-align: middle;
 }
 .container .iphone-icon {
   background-image: url("../images/sprite.png");
@@ -401,6 +402,7 @@ label {
   width: 15px;
   height: 16px;
   display: inline-block;
+  vertical-align: middle;
 }
 .show-site-content {
   cursor: pointer;
