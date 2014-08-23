@@ -1,5 +1,5 @@
 <h1>Recruitment UXPIN</h1>
-<p>Author: <strong>Artur Stêpieñ</strong>
+<p>Author: <strong>Artur Stepien</strong>
 
 <h2>Install npm</h2>
 <p>npm install</p>
