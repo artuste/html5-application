@@ -1,5 +1,5 @@
 {
-  "name": "uxpin-webdev",
+  "name": "uxrd-webdev",
   "version": "0.1.0",
   "devDependencies": {
     "grunt": "~0.4.5",
@@ -15,6 +15,5 @@
     "grunt-htmlhint": "^0.4.0",
     "grunt-wiredep": "^1.8.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

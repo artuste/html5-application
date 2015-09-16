@@ -1,7 +1,7 @@
 {
-  "name": "uxpin-webdev",
+  "name": "uxrd-webdev",
   "version": "0.1.0",
-  "description": "uxpin-webdev",
+  "description": "uxrd-webdev",
   "moduleType": [
     "globals",
     "node"

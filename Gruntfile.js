@@ -1,4 +1,4 @@
-module.exports = function (grunt) {
+    module.exports = function (grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         wiredep: {
@@ -66,6 +66,15 @@ module.exports = function (grunt) {
                 files: ['index.html'],
                 tasks: ['htmlhint']
             }
+        },
+        connect: {
+            dist: {
+                options: {
+                    port: 1338,
+                    hostname: 'localhost',
+                    keepalive: true
+                }
+            }
         }
     });
 
@@ -76,8 +85,9 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-wiredep');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-htmlhint');
+    grunt.loadNpmTasks('grunt-contrib-connect');
 
     grunt.registerTask('hints', ['jshint', 'htmlhint']);
     grunt.registerTask('less-css', ['less', 'cssmin']);
-    grunt.registerTask('default', ['less-css', 'wiredep']);
+    grunt.registerTask('default', ['less-css', 'wiredep', 'connect']);
 };
